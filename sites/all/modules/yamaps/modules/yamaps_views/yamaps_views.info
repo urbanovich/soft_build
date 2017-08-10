@@ -1,0 +1,16 @@
+name = Yandex Maps Views
+description = Provides Yandex Maps Views plugins.
+core = 7.x
+package = Yandex
+
+dependencies[] = views
+dependencies[] = yamaps
+
+files[] = handlers/yamaps_views_plugin_style_default_map.inc
+
+; Information added by Drupal.org packaging script on 2017-07-20
+version = "7.x-1.8"
+core = "7.x"
+project = "yamaps"
+datestamp = "1500525710"
+

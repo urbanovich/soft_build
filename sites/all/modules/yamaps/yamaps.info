@@ -1,0 +1,14 @@
+name = Yandex Maps
+description = Provides configurable "Yandex Map" field and blocks to display interactive maps based on "Yandex.Maps API".
+core = 7.x
+package = Yandex
+php = 5.4
+
+configure = admin/config/services/yamaps
+
+; Information added by Drupal.org packaging script on 2017-07-20
+version = "7.x-1.8"
+core = "7.x"
+project = "yamaps"
+datestamp = "1500525710"
+
