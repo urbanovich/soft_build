@@ -1,0 +1,46 @@
+[Fri Aug 11 08:53:39.699620 2017] [ssl:warn] [pid 4600] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Aug 11 08:53:39.731536 2017] [ssl:warn] [pid 4601] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Aug 11 09:00:14.518504 2017] [ssl:warn] [pid 4791] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Aug 11 09:00:14.549987 2017] [ssl:warn] [pid 4792] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Aug 11 09:06:04.445664 2017] [ssl:warn] [pid 25087] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Aug 11 09:06:04.488679 2017] [ssl:warn] [pid 25088] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Aug 11 10:56:44.720808 2017] [ssl:emerg] [pid 30489] AH02562: Failed to configure certificate soft-build.by:443:0 (with chain), check /etc/apache2/ssl/__soft-build.by.csr
+[Fri Aug 11 10:56:44.720839 2017] [ssl:emerg] [pid 30489] SSL Library Error: error:0906D06C:PEM routines:PEM_read_bio:no start line (Expecting: TRUSTED CERTIFICATE) -- Bad file contents or format - or even just a forgotten SSLCertificateKeyFile?
+[Fri Aug 11 10:56:44.720848 2017] [ssl:emerg] [pid 30489] SSL Library Error: error:140DC009:SSL routines:SSL_CTX_use_certificate_chain_file:PEM lib
+[Fri Aug 11 11:05:50.913523 2017] [ssl:emerg] [pid 30559] AH02565: Certificate and private key soft-build.by:443:0 from /etc/apache2/ssl/soft-build.by.crt and /etc/apache2/ssl/__soft-build.by.key do not match
+[Fri Aug 11 11:06:21.517718 2017] [ssl:warn] [pid 30597] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Aug 11 11:06:21.548719 2017] [ssl:warn] [pid 30598] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Aug 11 13:10:52.636225 2017] [ssl:error] [pid 31455] AH02579: Init: Private key not found
+[Fri Aug 11 13:10:52.636265 2017] [ssl:error] [pid 31455] SSL Library Error: error:0D0680A8:asn1 encoding routines:ASN1_CHECK_TLEN:wrong tag
+[Fri Aug 11 13:10:52.636273 2017] [ssl:error] [pid 31455] SSL Library Error: error:0D08303A:asn1 encoding routines:ASN1_TEMPLATE_NOEXP_D2I:nested asn1 error
+[Fri Aug 11 13:10:52.636279 2017] [ssl:error] [pid 31455] SSL Library Error: error:0D0680A8:asn1 encoding routines:ASN1_CHECK_TLEN:wrong tag
+[Fri Aug 11 13:10:52.636285 2017] [ssl:error] [pid 31455] SSL Library Error: error:0D07803A:asn1 encoding routines:ASN1_ITEM_EX_D2I:nested asn1 error (Type=RSA)
+[Fri Aug 11 13:10:52.636292 2017] [ssl:error] [pid 31455] SSL Library Error: error:04093004:rsa routines:OLD_RSA_PRIV_DECODE:RSA lib
+[Fri Aug 11 13:10:52.636297 2017] [ssl:error] [pid 31455] SSL Library Error: error:0D0680A8:asn1 encoding routines:ASN1_CHECK_TLEN:wrong tag
+[Fri Aug 11 13:10:52.636303 2017] [ssl:error] [pid 31455] SSL Library Error: error:0D07803A:asn1 encoding routines:ASN1_ITEM_EX_D2I:nested asn1 error (Type=PKCS8_PRIV_KEY_INFO)
+[Fri Aug 11 13:10:52.636312 2017] [ssl:emerg] [pid 31455] AH02564: Failed to configure encrypted (?) private key soft-build.by:443:0, check /etc/apache2/ssl/private.key
+[Fri Aug 11 13:17:50.470310 2017] [ssl:error] [pid 31507] AH02579: Init: Private key not found
+[Fri Aug 11 13:17:50.470351 2017] [ssl:error] [pid 31507] SSL Library Error: error:0D0680A8:asn1 encoding routines:ASN1_CHECK_TLEN:wrong tag
+[Fri Aug 11 13:17:50.470360 2017] [ssl:error] [pid 31507] SSL Library Error: error:0D08303A:asn1 encoding routines:ASN1_TEMPLATE_NOEXP_D2I:nested asn1 error
+[Fri Aug 11 13:17:50.470365 2017] [ssl:error] [pid 31507] SSL Library Error: error:0D0680A8:asn1 encoding routines:ASN1_CHECK_TLEN:wrong tag
+[Fri Aug 11 13:17:50.470372 2017] [ssl:error] [pid 31507] SSL Library Error: error:0D07803A:asn1 encoding routines:ASN1_ITEM_EX_D2I:nested asn1 error (Type=RSA)
+[Fri Aug 11 13:17:50.470378 2017] [ssl:error] [pid 31507] SSL Library Error: error:04093004:rsa routines:OLD_RSA_PRIV_DECODE:RSA lib
+[Fri Aug 11 13:17:50.470390 2017] [ssl:error] [pid 31507] SSL Library Error: error:0D0680A8:asn1 encoding routines:ASN1_CHECK_TLEN:wrong tag
+[Fri Aug 11 13:17:50.470396 2017] [ssl:error] [pid 31507] SSL Library Error: error:0D07803A:asn1 encoding routines:ASN1_ITEM_EX_D2I:nested asn1 error (Type=PKCS8_PRIV_KEY_INFO)
+[Fri Aug 11 13:17:50.470405 2017] [ssl:emerg] [pid 31507] AH02564: Failed to configure encrypted (?) private key soft-build.by:443:0, check /etc/apache2/ssl/private.key
+[Fri Aug 11 13:26:38.144764 2017] [ssl:emerg] [pid 31653] AH02572: Failed to configure at least one certificate and key for soft-build.by:443
+[Fri Aug 11 13:26:38.144813 2017] [ssl:emerg] [pid 31653] SSL Library Error: error:140A80B1:SSL routines:SSL_CTX_check_private_key:no certificate assigned
+[Fri Aug 11 13:29:31.637705 2017] [ssl:emerg] [pid 31720] AH02562: Failed to configure certificate soft-build.by:443:0 (with chain), check /etc/apache2/ssl/__soft-build.by.csr
+[Fri Aug 11 13:29:31.637746 2017] [ssl:emerg] [pid 31720] SSL Library Error: error:0906D06C:PEM routines:PEM_read_bio:no start line (Expecting: TRUSTED CERTIFICATE) -- Bad file contents or format - or even just a forgotten SSLCertificateKeyFile?
+[Fri Aug 11 13:29:31.637756 2017] [ssl:emerg] [pid 31720] SSL Library Error: error:140DC009:SSL routines:SSL_CTX_use_certificate_chain_file:PEM lib
+[Fri Aug 11 13:31:32.189793 2017] [ssl:error] [pid 31799] AH02579: Init: Private key not found
+[Fri Aug 11 13:31:32.189832 2017] [ssl:error] [pid 31799] SSL Library Error: error:0D0680A8:asn1 encoding routines:ASN1_CHECK_TLEN:wrong tag
+[Fri Aug 11 13:31:32.189840 2017] [ssl:error] [pid 31799] SSL Library Error: error:0D08303A:asn1 encoding routines:ASN1_TEMPLATE_NOEXP_D2I:nested asn1 error
+[Fri Aug 11 13:31:32.189846 2017] [ssl:error] [pid 31799] SSL Library Error: error:0D0680A8:asn1 encoding routines:ASN1_CHECK_TLEN:wrong tag
+[Fri Aug 11 13:31:32.189852 2017] [ssl:error] [pid 31799] SSL Library Error: error:0D07803A:asn1 encoding routines:ASN1_ITEM_EX_D2I:nested asn1 error (Type=RSA)
+[Fri Aug 11 13:31:32.189858 2017] [ssl:error] [pid 31799] SSL Library Error: error:04093004:rsa routines:OLD_RSA_PRIV_DECODE:RSA lib
+[Fri Aug 11 13:31:32.189864 2017] [ssl:error] [pid 31799] SSL Library Error: error:0D0680A8:asn1 encoding routines:ASN1_CHECK_TLEN:wrong tag
+[Fri Aug 11 13:31:32.189870 2017] [ssl:error] [pid 31799] SSL Library Error: error:0D07803A:asn1 encoding routines:ASN1_ITEM_EX_D2I:nested asn1 error (Type=PKCS8_PRIV_KEY_INFO)
+[Fri Aug 11 13:31:32.189878 2017] [ssl:emerg] [pid 31799] AH02564: Failed to configure encrypted (?) private key soft-build.by:443:0, check /etc/apache2/ssl/private.key
+[Fri Aug 11 13:33:38.001531 2017] [ssl:warn] [pid 31850] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Fri Aug 11 13:33:38.032973 2017] [ssl:warn] [pid 31851] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
