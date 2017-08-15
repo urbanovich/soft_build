@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Theme language icon and text.
+ *
+ * @ingroup themeable
+ */
+function custom_lang_icon_theme_registry_alter(&$theme_registry) {
+
+    //Override theme theme_languageicons_place
+    if (isset($theme_registry['languageicons_place'])) {
+        $theme_registry['languageicons_place']['function'] = 'theme_custom_lang_icon_place';
+    }
+}
+
+/**
+ * Override theme theme_languageicons_place
+ *
+ * @param $variables
+ * @return mixed
+ */
+function theme_custom_lang_icon_place($variables) {
+    return $variables['text'];
+}

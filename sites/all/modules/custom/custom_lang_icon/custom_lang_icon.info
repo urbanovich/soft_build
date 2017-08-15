@@ -1,0 +1,7 @@
+name = Custom Language Icon
+description = The module changes a display of language icon module(link on different languages)
+package = Custom
+core = 7.x
+
+version = "1.0"
+core = "7.x"
