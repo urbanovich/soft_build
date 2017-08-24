@@ -107,6 +107,23 @@ function nivo_slider_slide_configuration_form($form, &$form_state) {
       '#default_value' => isset($settings['url']) ? $settings['url'] : '',
       '#description' => t('Specify a path or an absolute URL. An example path is %blog for the blog page. An example absolute URL is %url for the Drupal website. %front is the front page.', array('%blog' => 'blog', '%url' => 'http://drupal.org', '%front' => '<front>')),
     );
+    if (module_exists('i18n')) {
+      $languages = language_list('enabled');
+      // Take only enabled
+      $languages = array_keys($languages[1]);
+      $language_array = array();
+      foreach ($languages as $key => $language) {
+        $language_array[$language] = $language;
+      }
+      $form['images'][$slide]['language'] = array(
+        '#type' => 'select',
+        '#title' => t('Show slide on specific languages'),
+        '#options' => $language_array,
+        '#default_value' => isset($settings['language']) ? $settings['language'] : '',
+        '#empty_option' => '- All -',
+        '#description' => t("Specify language on which slide will be shown"),
+      );
+    }
     $form['images'][$slide]['visibility'] = array(
       '#type' => 'textarea',
       '#title' => t('Show slide on specific pages'),
