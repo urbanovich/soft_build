@@ -315,9 +315,9 @@ class SearchApiHighlightSearchResult extends SearchApiAbstractProcessor {
                 // leaving about 60 characters extra before and after for context.
                 // Note that a space was added to the front and end of $text above.
                 if ($p) {
-                    if (($q = mb_strpos(' ' . $text, ' ', max(0, $p - 30))) !== FALSE) {
-                        $end = mb_substr($text . ' ', $p, 10);
-                        if (($s = mb_strrpos($end, ' ')) !== FALSE) {
+                    if (($q = strpos(' ' . $text, ' ', max(0, $p - 30))) !== FALSE) {
+                        $end = substr($text . ' ', $p, 50);
+                        if (($s = strrpos($end, ' ')) !== FALSE) {
                             // Account for the added spaces.
                             $q = max($q - 1, 0);
                             $s = min($s, strlen($end) - 1);
@@ -369,7 +369,7 @@ class SearchApiHighlightSearchResult extends SearchApiAbstractProcessor {
         // Fetch text
         $out = array();
         foreach ($newranges as $from => $to) {
-            $out[] = mb_substr($text, $from, $to - $from);
+            $out[] = substr($text, $from, $to - $from);
         }
 
         // Let translators have the ... separator text as one chunk.
