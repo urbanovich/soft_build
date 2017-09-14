@@ -1,0 +1,18 @@
+<?php
+/*
+* @package    HighlightSearchResult
+* @author     Dzmitry Urbanovich (urbanovich.mslo@gmail.com)
+*/
+
+/**
+ * Implements hook_search_api_processor_info().
+ */
+function highlight_search_result_search_api_processor_info() {
+    $processors['search_api_highlight_search_result'] = array(
+        'name' => t('Highlight search result'),
+        'description' => t('This processor improves search of Russian words by using the stemming algorithm for Russian language.'),
+        'class' => 'SearchApiHighlightSearchResult',
+    );
+
+    return $processors;
+}

@@ -430,6 +430,10 @@ abstract class SearchApiAbstractService implements SearchApiServiceInterface {
         watchdog_exception('search_api', $e, '%type while trying to remove index %index from deleted server %server: !message in %function (line %line of %file).', $variables);
       }
     }
+    if (search_api_is_text_type($type)) {
+      $text_content = $value;
+    }
+    return $text_content;
   }
 
   /**
@@ -459,6 +463,10 @@ abstract class SearchApiAbstractService implements SearchApiServiceInterface {
     if (is_object($index) && empty($index->read_only)) {
       $this->deleteItems('all', $index);
     }
+    if (search_api_is_text_type($type)) {
+      $text_content = $value;
+    }
+    return $text_content;
   }
 
   /**
