@@ -250,9 +250,9 @@ $databases = array (
     'default' => 
     array (
       'database' => 'soft_build',
-      'username' => 'dev',
-      'password' => 'dev',
-      'host' => 'db',
+      'username' => 'root',
+      'password' => 'setller',
+      'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
