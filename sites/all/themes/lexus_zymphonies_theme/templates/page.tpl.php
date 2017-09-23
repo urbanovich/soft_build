@@ -258,7 +258,8 @@
 
   </div>
   <div class="credits">
-    <?php print t('Design by'); ?><a href="http://www.zymphonies.com"> Zymphonies</a>
+      &nbsp;
+<!--    --><?php //print t('Design by'); ?><!--<a href="http://www.zymphonies.com"> Zymphonies</a>-->
   </div>
 
 </div>
