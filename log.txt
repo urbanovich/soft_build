@@ -1,0 +1,107 @@
+
+
+Array
+(
+    [actions] => Array
+        (
+            [#type] => actions
+            [submit] => Array
+                (
+                    [#type] => submit
+                    [#value] => Поиск
+                )
+
+        )
+
+    [#submit] => Array
+        (
+            [0] => search_box_form_submit
+        )
+
+    [#form_id] => search_block_form
+    [#type] => form
+    [#build_id] => form-E7c8VD0D4jnJFl9JJLZyABxVMBYUM_SZtt7t8Pi8Yuo
+    [form_build_id] => Array
+        (
+            [#type] => hidden
+            [#value] => form-E7c8VD0D4jnJFl9JJLZyABxVMBYUM_SZtt7t8Pi8Yuo
+            [#id] => form-E7c8VD0D4jnJFl9JJLZyABxVMBYUM_SZtt7t8Pi8Yuo
+            [#name] => form_build_id
+            [#parents] => Array
+                (
+                    [0] => form_build_id
+                )
+
+        )
+
+    [#token] => search_block_form
+    [form_token] => Array
+        (
+            [#id] => edit-search-block-form-form-token
+            [#type] => token
+            [#default_value] => _5Ef2HAm_G5Z8voUe10KZSpdcAaknkNRJ2d8YJ9KKp4
+            [#parents] => Array
+                (
+                    [0] => form_token
+                )
+
+        )
+
+    [form_id] => Array
+        (
+            [#type] => hidden
+            [#value] => search_block_form
+            [#id] => edit-search-block-form
+            [#parents] => Array
+                (
+                    [0] => form_id
+                )
+
+        )
+
+    [#id] => search-block-form
+    [#method] => get
+    [#action] => /search
+    [#theme_wrappers] => Array
+        (
+            [0] => form
+        )
+
+    [#tree] => 
+    [#parents] => Array
+        (
+        )
+
+    [#validate] => Array
+        (
+        )
+
+    [#theme] => Array
+        (
+            [0] => search_block_form
+            [1] => search_box
+        )
+
+    [#after_build] => Array
+        (
+            [0] => context_form_alter_node_after_build
+        )
+
+    [text] => Array
+        (
+            [#type] => textfield
+            [#title] => Поиск
+            [#title_display] => invisible
+            [#size] => 15
+            [#default_value] => 
+            [#attributes] => Array
+                (
+                    [title] => Введите ключевые слова для поиска.
+                )
+
+        )
+
+)
+
+time: 12-09-2017 16:03:16
+file: /var/www/html/soft-build/sites/all/modules/custom/search_form/search_form.module

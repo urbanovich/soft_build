@@ -1,0 +1,7 @@
+name = "HighlightSearchResult"
+description = "Implements the Russian stemming algorithm to improve Russian-language searching."
+core = 7.x
+package = Search
+
+files[] = SearchApiHighlightSearchResult.php
+files[] = HighlightSearchResult.php

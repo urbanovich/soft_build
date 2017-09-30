@@ -44,3 +44,5 @@
 [Fri Aug 11 13:31:32.189878 2017] [ssl:emerg] [pid 31799] AH02564: Failed to configure encrypted (?) private key soft-build.by:443:0, check /etc/apache2/ssl/private.key
 [Fri Aug 11 13:33:38.001531 2017] [ssl:warn] [pid 31850] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
 [Fri Aug 11 13:33:38.032973 2017] [ssl:warn] [pid 31851] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Wed Sep 06 10:15:11.570856 2017] [:error] [pid 12627] [client 213.184.225.110:53944] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0, referer: https://soft-build.by/ru/admin/structure/views/view/search_page
+[Wed Sep 06 10:20:52.164975 2017] [:error] [pid 12547] [client 213.184.225.110:54166] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0, referer: https://soft-build.by/ru/admin/structure/views/view/search_page/edit

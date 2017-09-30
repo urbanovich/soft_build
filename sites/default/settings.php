@@ -643,4 +643,6 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  */
 # $conf['allow_css_double_underscores'] = TRUE;
 
+
+$conf['drupal_http_request_fails'] = FALSE;
 include DRUPAL_ROOT . '/sites/all/modules/domain/settings.inc';
