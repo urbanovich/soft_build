@@ -6,6 +6,7 @@ engine = phptemplate
 stylesheets[all][] = css/font-awesome.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/media.css
+stylesheets[all][] = css/self-style.css
 scripts[] = js/custom.js
 
 regions[search]      	 = Search
