@@ -29,6 +29,7 @@ regions[footer_first]    = First footer widget
 regions[footer_second]   = Second footer widget
 regions[footer_third]    = Third footer widget
 regions[footer_forth]    = Forth footer widget
+regions[footer_links]    = Footer links
 
 features[] = logo
 features[] = name

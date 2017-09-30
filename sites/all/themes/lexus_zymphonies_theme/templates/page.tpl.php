@@ -235,8 +235,10 @@
   <div class="footer_credit">
       
     <div id="copyright" class="full-wrap clearfix">
-      <div class="copyright">&copy; <?php echo date("Y"); ?> <?php print $site_name; ?>. All Rights Reserved.</div> 
-      
+      <div class="copyright">&copy; <?php echo date("Y"); ?> <?php print $site_name; ?>. All Rights Reserved.</div>
+        <?php if ($page['footer_links']): ?>
+            <div class="column"><?php print render($page['footer_links']); ?></div>
+        <?php endif; ?>
       <!-- Social Links -->
         
       <?php if (theme_get_setting('social_links')): ?>
