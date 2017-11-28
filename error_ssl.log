@@ -46,3 +46,5 @@
 [Fri Aug 11 13:33:38.032973 2017] [ssl:warn] [pid 31851] AH01906: soft-build.by:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
 [Wed Sep 06 10:15:11.570856 2017] [:error] [pid 12627] [client 213.184.225.110:53944] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0, referer: https://soft-build.by/ru/admin/structure/views/view/search_page
 [Wed Sep 06 10:20:52.164975 2017] [:error] [pid 12547] [client 213.184.225.110:54166] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0, referer: https://soft-build.by/ru/admin/structure/views/view/search_page/edit
+[Mon Nov 20 20:20:33.857805 2017] [ssl:warn] [pid 23603] AH01909: softbuildnow.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Nov 20 20:20:33.900562 2017] [ssl:warn] [pid 23604] AH01909: softbuildnow.com:443:0 server certificate does NOT include an ID which matches the server name

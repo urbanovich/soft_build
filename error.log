@@ -1,1 +1,6 @@
 [Thu Aug 10 08:25:36.921294 2017] [:error] [pid 22627] [client 213.184.225.110:55776] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /var/www/soft-build.by/includes/database/database.inc on line 794, referer: http://52.59.193.232/admin/modules?render=overlay
+[Wed Nov 22 22:18:43.187819 2017] [negotiation:error] [pid 8325] [client 199.124.62.38:58252] AH00687: Negotiation: discovered file(s) matching request: /var/www/soft-build.by/web (None could be negotiated).
+[Wed Nov 22 22:53:45.536205 2017] [negotiation:error] [pid 8322] [client 199.124.62.38:33766] AH00687: Negotiation: discovered file(s) matching request: /var/www/soft-build.by/web (None could be negotiated).
+[Wed Nov 22 23:59:11.103725 2017] [negotiation:error] [pid 8737] [client 199.124.62.38:51987] AH00687: Negotiation: discovered file(s) matching request: /var/www/soft-build.by/web (None could be negotiated).
+[Sat Nov 25 03:09:27.854409 2017] [negotiation:error] [pid 16299] [client 107.180.71.232:51576] AH00687: Negotiation: discovered file(s) matching request: /var/www/soft-build.by/web (None could be negotiated).
+[Sat Nov 25 06:58:55.665896 2017] [negotiation:error] [pid 22392] [client 107.180.71.232:34520] AH00687: Negotiation: discovered file(s) matching request: /var/www/soft-build.by/web (None could be negotiated).
