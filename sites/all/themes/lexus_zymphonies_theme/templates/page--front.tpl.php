@@ -151,11 +151,11 @@
       <div class="content-sidebar-wrap">
         <div id="content">
 
-          <?php if (theme_get_setting('breadcrumbs')): ?>
+          <?php /*if (theme_get_setting('breadcrumbs')): */?><!--
             <div id="breadcrumbs">
-              <?php if ($breadcrumb): print $breadcrumb; endif;?>
+              <?php /*if ($breadcrumb): print $breadcrumb; endif;*/?>
             </div>
-          <?php endif; ?>
+          --><?php /*endif; */?>
 
           <section id="post-content" role="main">
             <?php print $messages; ?>
