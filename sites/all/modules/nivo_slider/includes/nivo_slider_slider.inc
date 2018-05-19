@@ -12,7 +12,6 @@
  *    Slider HTML markup
  */
 function nivo_slider_slider() {
-  global $language;
   // Get all available slides
   $slides = variable_get('nivo_slider_banner_settings', array());
 
@@ -21,15 +20,8 @@ function nivo_slider_slider() {
 
   // Determine which slides should be visible
   foreach ($slides as $slide) {
-    // Detect language negotiation
-    $slide_language = TRUE;
-    if (module_exists('i18n')) {
-      if( $slide['language'] != '' ) {
-        $slide_language = ( $slide['language'] ===  $language->language);
-      }
-    } 
     // Only display published slides
-    if ($slide['published'] == TRUE && $slide_language) {
+    if ($slide['published'] == TRUE) {
       // Convert path to lowercase. This allows comparison of the same path
       // with different case. Ex: /Page, /page, /PAGE.
       $pages = drupal_strtolower($slide['visibility']);
@@ -104,9 +96,9 @@ function nivo_slider_slider() {
             'width' => NULL,
             'height' => NULL,
             'alt' => check_plain(nivo_slider_translate('slide:' . $slide . ':title', $settings['title'])),
-            'title' => check_plain(nivo_slider_translate('slide:' . $slide . ':description', $description)),
+            'title' => check_plain(empty($description_text_only) ? nivo_slider_translate('slide:' . $slide . ':description', $description) : $description),
             'attributes' => array(
-              'class' => 'slide',
+              'class' => array('slide'),
               'id' => 'slide-' . $slide,
               'data-thumb' => file_create_url(check_plain($file->uri)),
               'data-transition' => check_plain($settings['transition']),
@@ -121,10 +113,10 @@ function nivo_slider_slider() {
           $variables = array(
             'style_name' => variable_get('nivo_slider_image_style_slide', 'large'),
             'path' => check_plain($file->uri),
-            'title' => check_plain(nivo_slider_translate('slide:' . $slide . ':description', $description)),
+            'title' => check_plain(empty($description_text_only) ? nivo_slider_translate('slide:' . $slide . ':description', $description) : $description),
             'alt' => check_plain(nivo_slider_translate('slide:' . $slide . ':title', $settings['title'])),
             'attributes' => array(
-              'class' => 'slide',
+              'class' => array('slide'),
               'id' => 'slide-' . $slide,
               'data-thumb' => image_style_url(variable_get('nivo_slider_image_style_thumb', 'thumbnail'), check_plain($file->uri)),
               'data-transition' => check_plain($settings['transition']),
@@ -136,7 +128,14 @@ function nivo_slider_slider() {
         }
 
         // Add a link to the slide image when required
-        $output .= !empty($settings['url']) ? l($image, $settings['url'], array('html' => TRUE)) : $image;
+        $options = array('html' => TRUE);
+        if (!empty($settings['newtab'])) {
+          $options['attributes'] = array(
+            'target' => '_blank'
+            );
+        }
+
+        $output .= !empty($settings['url']) ? l($image, $settings['url'], $options) : $image;
       }
     }
   }

@@ -1,12 +1,11 @@
 name = Lexus Zymphonies Theme
-description =  Lexus Zymphonies Theme <br/>Developed by <a href="http://www.zymphonies.com">Zymphonies</a> & Designed by <a href="http://www.freebiezz.com">FreeBiezz</a>.<br/>Contact us for Drupal Design & Development <a href="mailto:info@zymphonies.com">info@zymphonies.com</a> 
+description =  Designed & Developed by <a href=http://www.zymphonies.com>Zymphonies</a><br/>Contact us for any kind of Drupal services <a href=mailto:info@zymphonies.com>info@zymphonies.com</a>
 core = 7.x
 
 engine = phptemplate
 stylesheets[all][] = css/font-awesome.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/media.css
-stylesheets[all][] = css/self-style.css
 scripts[] = js/custom.js
 
 regions[search]      	 = Search
@@ -30,7 +29,8 @@ regions[footer_first]    = First footer widget
 regions[footer_second]   = Second footer widget
 regions[footer_third]    = Third footer widget
 regions[footer_forth]    = Forth footer widget
-regions[footer_links]    = Footer links
+regions[page_top] 		 = Page top
+regions[page_bottom] 	 = Page bottom
 
 features[] = logo
 features[] = name
@@ -55,4 +55,11 @@ version = "7.x-1.1"
 core = "7.x"
 project = "lexus_zymphonies_theme"
 datestamp = "1437594241"
+
+
+; Information added by Drupal.org packaging script on 2017-11-29
+version = "7.x-1.3"
+core = "7.x"
+project = "lexus_zymphonies_theme"
+datestamp = "1511978587"
 

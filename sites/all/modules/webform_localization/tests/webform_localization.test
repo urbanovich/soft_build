@@ -116,7 +116,7 @@ class WebformLocalizationWebTestCase extends DrupalWebTestCase {
     'confirmation' => 'Thanks!',
       ) + webform_node_defaults(),
     );
-    $components = $this->wtc->testWebformComponents();
+    $components = $this->wtc->webformComponents();
 
     /*
      *  @todo : We need further debug to find how to support

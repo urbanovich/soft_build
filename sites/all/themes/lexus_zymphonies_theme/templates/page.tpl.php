@@ -85,7 +85,8 @@
 </div>
 
 <!-- End Header -->
-
+  
+<?php if ($main_menu): ?>
   <div class="menu-wrap">
     <div class="full-wrap clearfix">
       <nav id="main-menu"  role="navigation">
@@ -100,6 +101,7 @@
       
     </div>
   </div>
+<?php endif; ?>
 
   <div class="slideshow">
     <?php if ($is_front): ?>
@@ -107,8 +109,7 @@
     <?php endif; ?>
   </div>
 
-<div id="top-area">
-  <?php if ($is_front): ?>           
+<div id="top-area">         
     <?php if ($page['top_first'] || $page['top_second'] || $page['top_third']): ?> 
       <div class="page-wrap clearfix">
         <?php if ($page['top_first']): ?>
@@ -135,7 +136,6 @@
         <?php endif; ?>
       </div>
     <?php endif; ?>
-  <?php endif; ?>
 </div>
 
 <div id="page-wrap">
@@ -188,10 +188,8 @@
     </div>
   </div>
 
-  <?php if ($is_front): ?>
-
-    <div id="footer_wrapper" class="footer_block bottom_widget">
-      <?php if ($page['bottom_widget_1'] || $page['bottom_widget_2'] || $page['bottom_widget_3']): ?> 
+  <?php if ($page['bottom_widget_1'] || $page['bottom_widget_2'] || $page['bottom_widget_3']): ?> 
+    <div id="footer_wrapper" class="footer_block bottom_widget">      
         <div id="footer-area" class="full-wrap clearfix">
           <?php if ($page['bottom_widget_1']): ?>
           <div class="column"><?php print render($page['bottom_widget_1']); ?></div>
@@ -203,9 +201,7 @@
           <div class="column"><?php print render($page['bottom_widget_3']); ?></div>
           <?php endif; ?>
         </div>
-      <?php endif; ?>
     </div>
-
   <?php endif; ?>
 
 </div>
@@ -235,10 +231,8 @@
   <div class="footer_credit">
       
     <div id="copyright" class="full-wrap clearfix">
-      <div class="copyright">&copy; <?php echo date("Y"); ?> <?php print $site_name; ?>. All Rights Reserved.</div>
-        <?php if ($page['footer_links']): ?>
-            <div class="column"><?php print render($page['footer_links']); ?></div>
-        <?php endif; ?>
+      <div class="copyright">&copy; <?php echo date("Y"); ?> <?php print $site_name; ?>. All Rights Reserved.</div> 
+      
       <!-- Social Links -->
         
       <?php if (theme_get_setting('social_links')): ?>
@@ -260,8 +254,7 @@
 
   </div>
   <div class="credits">
-      &nbsp;
-<!--    --><?php //print t('Design by'); ?><!--<a href="http://www.zymphonies.com"> Zymphonies</a>-->
+    <?php print t('Design by'); ?><a href="http://www.zymphonies.com"> Zymphonies</a>
   </div>
 
 </div>

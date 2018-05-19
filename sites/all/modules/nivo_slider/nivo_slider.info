@@ -10,9 +10,9 @@ files[] = nivo_slider.test
 
 configure = admin/structure/nivo-slider
 
-; Information added by Drupal.org packaging script on 2014-03-18
-version = "7.x-1.11"
+; Information added by Drupal.org packaging script on 2017-12-19
+version = "7.x-1.12"
 core = "7.x"
 project = "nivo_slider"
-datestamp = "1395166474"
+datestamp = "1513699993"
 
